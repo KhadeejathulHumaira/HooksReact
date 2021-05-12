@@ -1,0 +1,48 @@
+{
+  "details": [
+    {
+      "name": "Humaira",
+      "emailid": "humai@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "gender": "female",
+      "dob": "2003-10-13",
+      "id": 1
+    },
+    {
+      "name": "Ashok",
+      "emailid": "ashok23@gmail.com",
+      "password": "234",
+      "confirm_password": "234",
+      "gender": "male",
+      "dob": "1999-02-12",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "images": "https://images.unsplash.com/photo-1620757516544-6d3034465999?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "detailId": 1
+    },
+    {
+      "id": 2,
+      "images": "https://images.unsplash.com/photo-1620757013459-9f05730bbd88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80",
+      "detailId": 2
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "title": "Flower",
+      "body": "Had a great time with my family"
+    },
+    {
+      "postId": 2,
+      "id": 2,
+      "title": "Forest",
+      "body": "Save trees save lives"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.signup{
+    padding:100px;
+    background-color: thistle;
+}
+.signup_fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.signup_label{
+    font-family: 'poppins';
+    font-weight:700;
+    font-size:20px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+.signup_input{
+    height:30px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+}
+.signup_btn{
+   
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:40px;
+    background-color:#450920;
+    color:white;
+    border:none;
+    height:50px;
+    border-radius:4px;
+    cursor:pointer;
+    width:257px;
+}

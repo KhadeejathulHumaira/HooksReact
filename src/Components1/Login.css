@@ -1,0 +1,58 @@
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding:100px;
+    background-color: thistle;
+}
+.login_label{
+    font-family: 'poppins';
+    font-weight:700;
+    font-size:20px;
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+.login_input{
+    height:30px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+}
+.login_para{
+    font-size:15px;
+    font-weight:600;
+}
+.login_button{
+   
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:40px;
+    background-color:#450920;
+    color:white;
+    border:none;
+    height:50px;
+    border-radius:4px;
+    cursor:pointer;
+    width:257px;
+}
+.login_forget_password{
+    display: flex;
+
+}
+a{
+    margin-top: 15px;
+    
+    
+}
+.forget_btn{
+    font-family: 'poppins';
+    font-size:15px;
+    font-weight: 600;
+    border:none;
+    margin-left: 40px;
+    background-color: thistle;
+    color:rgb(75, 50, 158);
+    cursor: pointer;
+}
