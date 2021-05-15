@@ -1,10 +1,11 @@
 import React,{useState} from 'react'
 import './Signup.css'
 import axios from 'axios'
+import {useHistory} from 'react-router-dom'
 
 function Signup() {
 
-
+    let history =useHistory()
     const [details,setDetails]=useState({
         name:'',
         emailid:'',
@@ -20,6 +21,7 @@ function Signup() {
             axios.post('http://localhost:3001/details',details)
             .then(res=>{
                 alert("Successfully Submitted")
+                history.push(`/account/${details.emailid}`)
             })
         }
         else{

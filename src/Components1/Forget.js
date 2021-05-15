@@ -4,11 +4,22 @@ import axios from 'axios'
 
 function Forget() {
 
+    const [id,setId]=useState(0)
     const[user_update,setUser_update]=useState({
         emailid:'',
         password:'',
         re_password:''
     })
+
+
+
+    useEffect(()=>{
+        axios.get(`http://localhost:3001/details?emailid=${user_update.emailid}`)
+        .then(res=>{
+           setId(res.data.map(item=>item.id))
+           
+        })
+    },[user_update.emailid])
     const handleChange=(e)=>{
         setUser_update({...user_update,
             [e.target.name]:e.target.value  })
@@ -16,7 +27,9 @@ function Forget() {
 
     const handleSubmit=(e)=>{
        
-        axios.patch(`http://localhost:3001/details?emailid=${user_update.emailid}`,
+       
+       
+        axios.patch(`http://localhost:3001/details/${id}`,
         {password:user_update.password,
           confirm_password:user_update.re_password})
         .then(res=>{
