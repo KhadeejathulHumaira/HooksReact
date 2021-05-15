@@ -1,0 +1,35 @@
+.forget{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding:100px;
+    background-color: thistle;
+}
+.forget_label{
+    font-family: 'poppins';
+    font-weight:700;
+    font-size:20px;
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+.forget_input{
+    height:30px;
+    width:250px;
+    border:none;
+    border-radius: 5px;
+}
+.forget_button{
+    margin-top: 20px;
+    height:40px;
+    width:250px;
+    font-family: 'poppins';
+    font-size:18px;
+    font-weight: 600;
+    border:none;
+    border-radius: 4px;
+    background-color: #450920;
+    color:whitesmoke;
+
+}

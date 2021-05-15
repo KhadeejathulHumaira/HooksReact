@@ -1,5 +1,5 @@
 {
-    "/details/:id":"/details/:id",
+  
     "/details/:id/posts":"/details/:id?_embed=posts",
     "/details/:id/posts/comments":"/posts/:id?_embed=comments"
    
