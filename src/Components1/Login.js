@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import './Login.css'
 import {Link,useHistory} from 'react-router-dom'
 import axios from 'axios'
@@ -10,6 +10,7 @@ function Login() {
     })
     const history=useHistory()
     const [info,setInfo]=useState([])
+    const inputRef=useRef(null)
 
     useEffect(()=>{
         axios.get('http://localhost:3001/details')
@@ -17,6 +18,7 @@ function Login() {
             setInfo(res.data)
             
         })
+       inputRef.current.focus()
     },[])
     
     const handleChange=(e)=>{
@@ -42,10 +44,10 @@ function Login() {
 
     return (
         <div >
-            <form className="login" onSubmit={handleSubmit}>
+            <form className="login" onSubmit={handleSubmit} method="GET">
             <p className="login_para">Sign into your account</p>
             <label className="login_label">Email Id:</label>
-            <input type="email" className="login_input" required onChange={handleChange} name="emailid"/>
+            <input type="email" className="login_input" required onChange={handleChange} name="emailid" ref={inputRef}/>
             <label className="login_label"> Password:</label>
             <input type="password" className="login_input" required onChange={handleChange} name="password"/>
             <button className="login_button">Sign In</button>

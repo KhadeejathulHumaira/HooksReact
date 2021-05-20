@@ -1,11 +1,13 @@
-import React,{useState} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import './Signup.css'
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
 
+
 function Signup() {
 
     let history =useHistory()
+   const inputRef=useRef(null)
     const [details,setDetails]=useState({
         name:'',
         emailid:'',
@@ -15,6 +17,9 @@ function Signup() {
         dob:''
 
     })
+   useEffect(()=>{
+        inputRef.current.focus()
+   },[])
 
     const handleSubmit=(e)=>{
         if (details.password===details.confirm_password){
@@ -47,7 +52,7 @@ function Signup() {
             <form onSubmit={handleSubmit}>
             <div className="signup_fields">
                 <label className="signup_label"> Name </label>
-                <input type="text" className="signup_input" required name="name" onChange={handleChange}></input>
+                <input type="text" className="signup_input" required name="name" onChange={handleChange} ref={inputRef}></input>
             </div>
             <div className="signup_fields">
                 <label className="signup_label"> Email Id </label>

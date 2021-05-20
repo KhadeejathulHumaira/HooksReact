@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Forget.css'
 import axios from 'axios'
+import {useHistory} from 'react-router-dom'
 
 function Forget() {
+    let hist=useHistory()
 
     const [id,setId]=useState(0)
     const[user_update,setUser_update]=useState({
@@ -33,9 +35,11 @@ function Forget() {
         {password:user_update.password,
           confirm_password:user_update.re_password})
         .then(res=>{
-            console.log(res.data)
+            alert("Password Changed")
+            hist.push(`/login/`)
+
         })
-        console.log(user_update)
+      
         e.preventDefault()
     }
     return (

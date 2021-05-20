@@ -12,48 +12,13 @@
     {
       "name": "Ashok",
       "emailid": "ashok23@gmail.com",
-      "password": "245",
-      "confirm_password": "245",
+      "password": "456",
+      "confirm_password": "456",
       "gender": "male",
       "dob": "2021-04-28",
       "id": 2
-    },
-    {
-      "name": "kareem",
-      "emailid": "kareem@gmail.com",
-      "password": "234",
-      "confirm_password": "234",
-      "gender": "male",
-      "dob": "2021-04-29",
-      "id": 3
-    },
-    {
-      "name": "Ram",
-      "emailid": "ram@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "gender": "female",
-      "dob": "2021-05-05",
-      "id": 4
-    },
-    {
-      "name": "Khadeejathul Humaira .M.S",
-      "emailid": "humairazulbiha@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "gender": "female",
-      "dob": "2021-05-15",
-      "id": 5
-    },
-    {
-      "name": "Seetha",
-      "emailid": "seetha@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "gender": "female",
-      "dob": "2021-04-26",
-      "id": 6
     }
+   
   ],
   "posts": [
     {
